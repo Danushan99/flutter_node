@@ -24,3 +24,10 @@ const fileFilter =(req,file,callback ) =>{
  }
  callback(null,true);
 }
+let upload = multer ({
+    storage: storage,
+    fileFilter: fileFilter,
+    fileSize: 1048576,
+});
+
+module.exports =upload.single("product");
