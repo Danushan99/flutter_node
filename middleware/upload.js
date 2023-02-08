@@ -30,4 +30,4 @@ let upload = multer ({
     fileSize: 1048576,
 });
 
-module.exports =upload.single("product");
+module.exports =upload.single("productImage");
